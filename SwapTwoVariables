@@ -1,0 +1,56 @@
+// Method1: using a temporary variable
+
+//take input from the users
+// let a = prompt('Enter the first variable : ');
+// let b = prompt('Enter the second variable : ');
+let a =10, b= 20;
+
+// create a temporary variable
+let temp;
+
+// swap variables
+temp = a;
+a = b;
+b = temp;
+
+console.log(`The value of a after swapping ${a}`);
+console.log(`The value of b after swapping ${b}`);
+
+
+// Method2 : using arithmetic operator
+
+let c = 30, d = 40;
+
+c = c + d;
+d = c - d;
+c = c - d;
+
+console.log(`The value of c after swapping : ${c}`);
+console.log(`The value of d after swapping : ${d}`);
+
+
+// Method 3 : using ES2015 destructing assignment
+
+let x = 15, y = 25;
+
+console.log(`The value of x before swapping is ${x}`);
+console.log(`The value of y before swapping is ${y}`);
+
+[x, y] = [y, x];
+
+console.log(`The value of x after swapping is ${x}`);
+console.log(`The value of y after swapping is ${y}`);
+
+
+// Method 4 : Using Bitwise XOR operator
+let i=4, j=2;  
+//100
+//010
+//110
+
+i = i ^ j;
+j = i ^ j;
+i = i ^ j;
+
+console.log(`The value of i after swapping is ${i}`);
+console.log(`The value of j after swapping is ${j}`);

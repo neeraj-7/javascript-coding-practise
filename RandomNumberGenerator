@@ -1,0 +1,19 @@
+// eg1: generate a Random Number
+
+let a = Math.random();
+console.log(`Random generated number is ${a}`);
+
+
+// eg2: get a random number between 1 and 10
+
+let b = Math.random() * (10-1) +1;
+b = Math.floor(b);
+console.log(`Random value between 1 and 10 is ${b}`);
+
+
+// eg3: integer value between two numbers(inclusive)
+
+let min = 1, max = 50;
+
+let result = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(`Random value between ${min} and ${max} is ${result}`);

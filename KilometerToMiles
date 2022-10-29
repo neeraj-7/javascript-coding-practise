@@ -1,0 +1,11 @@
+
+// taking kilometer input from user
+// let kilometers = prompt('Enter value in kilometer: ')
+let kilometers = 2.2;
+
+// conversion factor 
+const factor = 0.621371;
+
+let miles = kilometers * factor;
+
+console.log(`${kilometers} kilometers is equal to ${miles} miles.`);
